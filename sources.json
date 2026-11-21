@@ -1,0 +1,121 @@
+{
+  "tables": {
+    "instruments": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "site",
+        "from",
+        "until",
+        "series",
+        "min",
+        "max"
+      ]
+    },
+    "slices": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "sheet",
+        "swap",
+        "series",
+        "purpose",
+        "lot"
+      ]
+    },
+    "readings": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "slice",
+        "instrument",
+        "day",
+        "received",
+        "value"
+      ]
+    },
+    "pair_changes": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "received",
+        "slice",
+        "withdraw_swap"
+      ]
+    },
+    "orders": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "lot",
+        "min",
+        "max",
+        "allowed_error",
+        "line_only",
+        "lab_allowed",
+        "shipped_at"
+      ]
+    },
+    "retests": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "slice",
+        "instrument",
+        "owner",
+        "slot",
+        "state"
+      ]
+    }
+  },
+  "links": [
+    [
+      "readings",
+      "slice",
+      "slices",
+      "id"
+    ],
+    [
+      "readings",
+      "instrument",
+      "instruments",
+      "id"
+    ],
+    [
+      "pair_changes",
+      "slice",
+      "slices",
+      "id"
+    ],
+    [
+      "orders",
+      "lot",
+      "slices",
+      "lot"
+    ],
+    [
+      "retests",
+      "slice",
+      "slices",
+      "id"
+    ],
+    [
+      "retests",
+      "instrument",
+      "instruments",
+      "id"
+    ]
+  ]
+}

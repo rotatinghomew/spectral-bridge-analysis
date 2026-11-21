@@ -1,0 +1,13 @@
+id,sheet,swap,series,purpose,lot
+S01,P01,G01,A,fit,
+S02,P02,G02,A,fit,
+S03,P03,G03,A,fit,
+S04,P04,G04,A,holdout,
+S04B,P04,G04,A,holdout,
+S05,P05,G05,A,holdout,
+S06,P06,G06,A,holdout,
+S07,P07,G07,A,fit,
+S08,P08,G08,A,holdout,
+S09,P09,,A,order,L01
+S10,P10,,A,order,L02
+S11,P11,G11,A,order,L03
