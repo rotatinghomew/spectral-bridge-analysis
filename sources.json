@@ -66,6 +66,19 @@
         "shipped_at"
       ]
     },
+    "certificates": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "orders",
+        "group_max_mean_error",
+        "common_reader_bias",
+        "partial_allowed",
+        "issued"
+      ]
+    },
     "retests": {
       "key": [
         "id"
