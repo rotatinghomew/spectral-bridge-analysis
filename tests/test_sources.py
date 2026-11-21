@@ -7,7 +7,7 @@ import unittest
 
 from check_sources import load_sources
 
-DATA = Path(__file__).with_name('data')
+DATA = Path(__file__).resolve().parents[1] / 'data'
 
 
 class ExchangeTests(unittest.TestCase):
